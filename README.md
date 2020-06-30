@@ -1,0 +1,1 @@
+# A simple Spring Boot Application and Cassandra DB integration.

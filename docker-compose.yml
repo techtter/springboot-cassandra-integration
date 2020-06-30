@@ -1,0 +1,15 @@
+# Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
+
+version: '3'
+
+  #Cassandra Database for the application
+  mycassandra:
+    build: ./
+    image: cassandra
+    container_name: mycassandra
+    ports:
+      - 9042:9042    # Forward the exposed port 9042 on the container to port 9042 on the host machine
+
+
+
+
