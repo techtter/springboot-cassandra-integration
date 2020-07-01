@@ -1,4 +1,4 @@
-package com.example.cassandra.model;
+package net.techtter.cassandra.springcassandraintegration.model;
 
 import lombok.*;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
@@ -15,5 +15,4 @@ public class Student {
     @PrimaryKey
     private int id;
     private String name;
-
 }

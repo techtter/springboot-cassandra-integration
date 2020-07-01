@@ -1,0 +1,16 @@
+version: '3'
+services:
+  springboot-app:
+    ports:
+      - 8080:8080
+    build:
+      context: .
+      args:
+        JAR_FILE: /springboot-cassandra.jar
+    restart: always
+
+  cassandradb:
+    image: cassandra
+    container_name: cassandradb
+    ports:
+      - "9042:9042"
